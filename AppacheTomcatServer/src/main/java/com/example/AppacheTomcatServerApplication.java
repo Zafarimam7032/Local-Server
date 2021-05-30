@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JettyServerApplication {
+public class AppacheTomcatServerApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(JettyServerApplication.class, args);
+		SpringApplication.run(AppacheTomcatServerApplication.class, args);
 	}
 
 }

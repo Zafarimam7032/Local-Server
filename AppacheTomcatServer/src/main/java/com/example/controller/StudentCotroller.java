@@ -3,9 +3,9 @@ package com.example.controller;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.annotation.PostConstruct;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,7 +18,7 @@ public class StudentCotroller {
 
 	private List<StudentVo> allStudent;
 
-	@ModelAttribute
+	@PostConstruct
 	public List<StudentVo> allStudent() {
 		return allStudent = Arrays.asList(new StudentVo(1, "Zafar", "new Delhi"),
 				new StudentVo(2, "Ateef", "new Delhi"), new StudentVo(3, "Rasika", "new Delhi"));
