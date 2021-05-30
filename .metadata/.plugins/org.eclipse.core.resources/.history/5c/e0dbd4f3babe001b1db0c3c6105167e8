@@ -1,0 +1,5 @@
+package com.example.Vo;
+
+public class StudentVo {
+
+}
